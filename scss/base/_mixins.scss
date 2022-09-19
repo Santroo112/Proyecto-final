@@ -1,0 +1,44 @@
+@mixin boxShadow ($h: 0px, $v: 5px, $b: 15px, $s: 0px, $c: rgba(0, 0, 0, 0.35)) {
+    -webkit-box-shadow: $h $v $b $s $c;
+-moz-box-shadow: $h $v $b $s $c;
+box-shadow: $h $v $b $s $c;
+}
+
+@mixin ImgBgCover {
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+@mixin px {
+	padding-left: 2em;
+	padding-right: 2em;
+}
+
+@mixin my {
+    margin-top:4em;
+    margin-bottom:4em;
+}
+
+@mixin sections{
+	padding:1em;
+	margin-top:4em;
+	margin-bottom:4em;
+	margin-left:10em;
+	margin-right:10em;
+}
+
+@mixin descripcion{
+	position: absolute;
+    margin-left: -5px;
+    border-width: 4px;
+    border-style: solid;
+    width: 120px;
+    top: 100%;
+    left: 50%;
+    margin-left: -60px;
+    color: #ccc;
+    background: $clr-marron;
+    font-weight: bold;
+    z-index: 1;
+}
